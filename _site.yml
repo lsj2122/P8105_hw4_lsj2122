@@ -10,9 +10,11 @@ navbar:
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<laylahjones1@gmail.com.com>
+      href: mailto:<laylahjones1@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/lsj2122/
+    - icon: fa-brands fa-linkedin
+      href: http://linkedin.com/in/laylah-jones
 output:
   html_document:
-    theme: sandstone
+    theme: journal
