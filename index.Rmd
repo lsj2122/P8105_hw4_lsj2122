@@ -1,5 +1,5 @@
 ---
-title: "Index"
+title: "Laylah Jones"
 output: 
   html_document:
     toc: true
