@@ -1,14 +1,47 @@
 ---
 title: "Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
+```{r}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
 
+data("instacart")
+```
 
+```{r}
+snacks_instacart = 
+  instacart |> 
+  filter(department == "snacks")
+```
 
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+## Top 15 Most Ordered Snacks in the Snacks Department
+
+```{r}
+snacks_instacart |> 
+  count(product_name) |> 
+  arrange(desc(n)) |> 
+  head(15) |> 
+  mutate(product_name = fct_reorder(product_name, n, .desc = TRUE)) |> 
+  plot_ly(
+    x = ~product_name, y = ~n, color = ~product_name,
+          type = "bar", 
+          colors = "viridis") |> 
+  layout(
+    title = "Top 15 Most Ordered Snacks in the Snacks Department",
+    xaxis = list(title = "Snack Name"),
+    yaxis = list(title = "Number of Times Ordered")
+  )
+```
 
 
 
