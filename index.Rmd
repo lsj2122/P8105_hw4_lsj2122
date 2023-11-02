@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-### Welcome to My Personal Website!
+### Welcome to my Personal Website!
 
 ![](images/me.jpeg)
 

@@ -2,11 +2,13 @@
 title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: Column
+    orientation: columns
     vertical_layout: fill
 ---
 
-```{r}
+### Here you can find examples of various distinct plots using Instacart data
+
+```{r, echo=FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(plotly)
@@ -15,20 +17,18 @@ library(p8105.datasets)
 data("instacart")
 ```
 
-```{r}
+```{r, echo=FALSE}
 snacks_instacart = 
   instacart |> 
   filter(department == "snacks")
 ```
 
-### Below you can find examples of various distinct plots using Instacart data
-
-Column {data-width=800}
+Plot #1 {data-width=800}
 -----------------------------------------------------------------------
 
 ## Top 15 Most Ordered Snacks in the Snacks Department
 
-```{r}
+```{r, echo=FALSE}
 snacks_instacart |> 
   count(product_name) |> 
   arrange(desc(n)) |> 
@@ -46,11 +46,11 @@ snacks_instacart |>
 ```
 
 
-Column {data-width=800}
+Plot #2 {data-width=800}
 -----------------------------------------------------------------------
 
 ## Number of Snack Aisle Orders by Hour of the Day
-```{r}
+```{r, echo=FALSE}
 snacks_instacart |> 
   group_by(order_hour_of_day) |> 
   count(aisle) |> 
@@ -64,12 +64,12 @@ snacks_instacart |>
 ```
 
 
-Column {data-width=800}
+Plot #3 {data-width=800}
 -----------------------------------------------------------------------
 
 ## Number of Add to Cart Orders by Department
 
-```{r}
+```{r, echo=FALSE}
 instacart |> 
   mutate(department = fct_reorder(department, add_to_cart_order)) |> 
   plot_ly(
