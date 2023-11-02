@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-### Academic and professional experience
+###Academic and professional experience
 
 ***Here you can find more information about my background, academic, and professional experience***
 
