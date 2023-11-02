@@ -2,7 +2,7 @@
 title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: Column
     vertical_layout: fill
 ---
 
@@ -21,7 +21,9 @@ snacks_instacart =
   filter(department == "snacks")
 ```
 
-Column {data-width=650}
+### Below you can find examples of various distinct plots using Instacart data
+
+Column {data-width=800}
 -----------------------------------------------------------------------
 
 ## Top 15 Most Ordered Snacks in the Snacks Department
@@ -44,7 +46,7 @@ snacks_instacart |>
 ```
 
 
-Column {data-width=650}
+Column {data-width=800}
 -----------------------------------------------------------------------
 
 ## Number of Snack Aisle Orders by Hour of the Day
@@ -62,7 +64,7 @@ snacks_instacart |>
 ```
 
 
-Column {data-width=650}
+Column {data-width=800}
 -----------------------------------------------------------------------
 
 ## Number of Add to Cart Orders by Department

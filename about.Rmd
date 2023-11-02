@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-###Academic and professional experience
+### Academic and Professional Experience
 
 ***Here you can find more information about my background, academic, and professional experience***
 
@@ -14,7 +14,7 @@ I am a first-year Master of Science student in the department of Epidemiology at
 
 I am from Philadelphia, PA but currently live in Washington Heights, NY. I obtained my Bachelor of Science in Psychology at Drexel University in 2023. I have worked as a Research Assistant at the Children's Hospital of Philadelphia (CHOP) at the Center for Injury and Violence Prevention. And until recently worked as a Research/Project Coordinator for Drexel University's LADDER Lab, which looked at brain development of individuals with neurodevelopmental disorders and typical development and how they think and learn. 
 
-In my free time I enjoy traveling to different countries, trying new foods, and spending time with my family. 
+In my free time I enjoy traveling to different countries, trying new foods, and spending time with my family. A fun fact about me is that I have traveled to 9 different countries (Ecuador, Qatar, Spain, London, Portugal, Amsterdam, Brazil, Mexico, and Honduras) and by the end of this year I will have traveled to 4 more (Iceland, Saudi Arabia, Egypt, and Morocco)!
 
 Below you will find access to my resume (containing my academic and professional experience):
 

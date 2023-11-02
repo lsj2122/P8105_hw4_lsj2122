@@ -6,13 +6,13 @@ output:
     toc_float: true
 ---
 
-### Welcome to my personal website!
+### Welcome to My Personal Website!
 
 ![](images/me.jpeg)
 
 My name is Laylah Jones. I am a Masters of Science student in Epidemiology at Columbia University's Mailman School of Public Health. This website was created as a product of the P8105 - Data Science I course.
 
-Please feel free the browse around the website. You can find a little bit about my academic and professional experience, my GitHub account where various projects made with R Studio, and other links here in the [about](about.html) page. You can also find a flexdashboard with some examples of distinct plots here in the [dashboard](dashboard.html). 
+Please feel free the browse around the website. You can find a little bit about my academic and professional experience here in the [about](about.html) page. You can also navigate to my Dashboard, where there are some examples of distinct plots using Instacart data here: [dashboard](dashboard.html). And lastly, at the top, you can click on the various icons where you will be sent to my Gmail, LinkedIn page, and GitHub account with other projects made with R Studio.
 
 
 
