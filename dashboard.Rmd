@@ -47,22 +47,35 @@ snacks_instacart |>
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-## Number of Snack Orders by Hour of the Day
+## Number of Snack Aisle Orders by Hour of the Day
 ```{r}
 snacks_instacart |> 
   group_by(order_hour_of_day) |> 
-  count(department) |> 
+  count(aisle) |> 
   plot_ly(x = ~order_hour_of_day, y = ~n,
           type = "scatter",
           mode = "markers",
-          name = ~department) |> 
-  layout(title = "Number of Snack Orders by Hour of the Day",
+          name = ~aisle) |> 
+  layout(title = "Number of Snacks Aisle Orders by Hour of the Day",
          xaxis = list(title = "Hour of the Day"),
-         yaxis = list(title = "Number of Snack Orders"))
+         yaxis = list(title = "Number of Snacks Aisle Orders"))
 ```
 
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
+## Number of Add to Cart Orders by Department
+
+```{r}
+instacart |> 
+  mutate(department = fct_reorder(department, add_to_cart_order)) |> 
+  plot_ly(
+    y = ~add_to_cart_order, color = ~department,
+    type = "box", colors = "viridis"
+  ) |> 
+  layout(title = "Number of Add to Cart Orders by Department",
+         xaxis = list(title = "Department"),
+         yaxis = list(title = "Number of Add to Cart Orders"))
+```
 
