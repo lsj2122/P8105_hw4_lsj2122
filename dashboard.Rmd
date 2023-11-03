@@ -46,7 +46,7 @@ snacks_instacart |>
 ```
 
 
-Column {data-width=650}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart 2
@@ -64,10 +64,6 @@ snacks_instacart |>
          xaxis = list(title = "Hour of the Day"),
          yaxis = list(title = "Number of Snacks Aisle Orders"))
 ```
-
-
-Column {data-width=650}
------------------------------------------------------------------------
 
 ### Chart 3
 
