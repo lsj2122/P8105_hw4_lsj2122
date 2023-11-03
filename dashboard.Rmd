@@ -1,14 +1,12 @@
 ---
-title: "Dashboard"
+title: "Focal Chart (Left)"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
 
-### Here you can find examples of various distinct plots using Instacart data
-
-```{r, echo=FALSE}
+```{r, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(plotly)
@@ -17,18 +15,20 @@ library(p8105.datasets)
 data("instacart")
 ```
 
-```{r, echo=FALSE}
+```{r, include=FALSE}
 snacks_instacart = 
   instacart |> 
   filter(department == "snacks")
 ```
 
-Plot #1 {data-width=800}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
-## Top 15 Most Ordered Snacks in the Snacks Department
+### Chart 1
 
-```{r, echo=FALSE}
+Top 15 Most Ordered Snacks in the Snacks Department
+
+```{r}
 snacks_instacart |> 
   count(product_name) |> 
   arrange(desc(n)) |> 
@@ -46,11 +46,13 @@ snacks_instacart |>
 ```
 
 
-Plot #2 {data-width=800}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
-## Number of Snack Aisle Orders by Hour of the Day
-```{r, echo=FALSE}
+### Chart 2
+
+Number of Snack Aisle Orders by Hour of the Day
+```{r}
 snacks_instacart |> 
   group_by(order_hour_of_day) |> 
   count(aisle) |> 
@@ -64,12 +66,14 @@ snacks_instacart |>
 ```
 
 
-Plot #3 {data-width=800}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
-## Number of Add to Cart Orders by Department
+### Chart 3
 
-```{r, echo=FALSE}
+Number of Add to Cart Orders by Department
+
+```{r}
 instacart |> 
   mutate(department = fct_reorder(department, add_to_cart_order)) |> 
   plot_ly(

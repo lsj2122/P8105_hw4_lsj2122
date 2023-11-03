@@ -7,7 +7,7 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
-    - text: "Dashboard"
+    - text: "Focal Chart (Left)"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<laylahjones1@gmail.com>
