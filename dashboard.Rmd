@@ -1,5 +1,5 @@
 ---
-title: "Focal Chart (Left)"
+title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
